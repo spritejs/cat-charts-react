@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-airbnb",
+  "parser": "babel-eslint",
+  "root": true,
+  "plugins": ["react"],
+  "rules": {
+    "semi": 0
+  }
+}
