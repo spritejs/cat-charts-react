@@ -57,3 +57,7 @@ function App() {
 
 ReactDOM.render(<App />, document.querySelector('#app'))
 ```
+
+
+
+Demo：<a target="_blank" href="https://github.com/justemit/cat-charts-react-demo">Quickstart</a>
