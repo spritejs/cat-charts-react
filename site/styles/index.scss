@@ -76,3 +76,19 @@ ul {
   background-color: hsla(220, 4%, 58%, 0.3);
   transition: background-color 0.3s;
 }
+
+.github-corner {
+  border-bottom: 0;
+  position: fixed;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  z-index: 9999;
+}
+
+.github-corner svg {
+  color: #fff;
+  fill: var(--theme-color, #e60000);
+  height: 80px;
+  width: 80px;
+}

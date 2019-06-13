@@ -2,8 +2,8 @@
   <header>
     <nav class="navbar">
       <router-link class="navbar-brand" to="/">
-        <!-- <img src="https://p0.ssl.qhimg.com/d/inn/e8ad2d0e47f4/logo.png" height="30" alt="qchart"> -->
-        catcharts-react
+        <img src="http://p0.qhimg.com/d/inn/9f54b5223cfd/cat-charts.png" height="30" alt="qchart">
+        React
       </router-link>
 
       <button @click="toggleShowMenu" class="navbar-toggler">
