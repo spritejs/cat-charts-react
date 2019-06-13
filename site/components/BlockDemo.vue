@@ -266,6 +266,11 @@ export default {
 .cm-s-default .cm-string {
   color: #f84e44ff;
 }
+
+.cm-s-default .cm-string-2 {
+  color: inherit;
+}
+
 .icon {
   cursor: pointer;
   opacity: 0.6;
