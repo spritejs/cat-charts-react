@@ -22,7 +22,7 @@ npm i spritejs @qcharts/core cat-charts-react
 
 ## 绘制
 
-:::demo
+
 
 ```javascript
 import React from 'react'
@@ -58,4 +58,6 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'))
 ```
 
-:::
+
+
+Demo：<a target="_blank" href="https://github.com/justemit/cat-charts-react-demo">Quickstart</a>
