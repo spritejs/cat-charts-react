@@ -150,6 +150,9 @@ export default {
 
     fullscreen() {
       this.isFullscreen = !this.isFullscreen
+      if(window.parent){
+        window.parent.postMessage({fullScreen:this.isFullscreen},'*');
+      }
     }
   }
 }
@@ -192,7 +195,7 @@ export default {
   z-index: 1000;
   margin-top: 0 !important;
 }
-
+.block-demo--fixed .bock-demo__ctrl{padding-right:88px;}
 .block-demo + .block-demo {
   margin-top: 30px;
 }
@@ -266,6 +269,7 @@ export default {
 .cm-s-default .cm-string {
   color: #f84e44ff;
 }
+
 .icon {
   cursor: pointer;
   opacity: 0.6;
