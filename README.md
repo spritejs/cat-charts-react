@@ -1,6 +1,6 @@
 # cat-charts-react
 
-> 基于 qcharts 封装的 React 图表组件库。使用上基本与 qcharts 一致。<a target="_blank" href="https://www.spritejs.com/cat-charts-react/">详细文档</a>
+> 基于 qcharts 封装的 React 图表组件库。使用上基本与 qcharts 一致。 <a target="_blank" href="https://www.spritejs.com/cat-charts-react/">→详细文档</a>
 
 ## 安装
 
