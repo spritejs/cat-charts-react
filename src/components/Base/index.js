@@ -24,9 +24,9 @@ class BaseComponent extends PureComponent {
     })
   }
 
-  componentWillReceiveProps() {
+  componentWillReceiveProps(nextProps) {
     if (this.instance) {
-      this.instance.attr(this.props)
+      this.instance.attr(nextProps)
       this.applyStyle(this.instance)
     }
   }
@@ -34,13 +34,11 @@ class BaseComponent extends PureComponent {
   render() {
     const Component = qcharts[this.name]
     const color = this.props.color
-    delete this.props.color
     const instance = new Component(this.props || {})
     this.applyStyle(instance)
     this.instance = instance
     this.context.addChild({ instance, props: this.props, color })
     instance.color(color)
-
     return null
   }
 }
