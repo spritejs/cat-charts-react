@@ -30,8 +30,11 @@
 import CodeMirror from 'codemirror'
 import Split from 'split.js'
 import { unescape } from 'scapegoat'
-import 'codemirror/mode/htmlmixed/htmlmixed'
+// import 'codemirror/mode/javascript/javascript'
+import 'codemirror/mode/jsx/jsx'
+// import 'codemirror/mode/xml/xml'
 import 'codemirror/lib/codemirror.css'
+
 import { throttle } from '../utils'
 
 export default {
@@ -98,7 +101,7 @@ export default {
 
     initEditor() {
       this.editor = CodeMirror.fromTextArea(this.$refs['textarea'], {
-        mode: 'application/javascript',
+        mode: 'jsx',
         extraKeys: {
           'Ctrl-Space': 'autocomplete'
         },
@@ -113,9 +116,7 @@ export default {
 
     syncCode() {
       const oDemo = this.$refs['demo']
-
       oDemo.innerHTML = `<iframe class="chart-frame" frameborder="0"></iframe>`
-
       const iframe = oDemo.querySelector('iframe')
 
       const code = Babel.transform(this.editor.getValue(), {
@@ -259,15 +260,9 @@ export default {
 
 .CodeMirror {
   height: 100% !important;
-  font-family: Menlo, Monaco, Consolas, Courier, monospace;
-  font-size: 14px;
-}
-.CodeMirror-gutters {
-  background-color: #f7f9fb;
-  border-right: none;
-}
-.cm-s-default .cm-string {
-  color: #f84e44ff;
+  font-family: monospace;
+  color: #000;
+  direction: ltr;
 }
 
 .icon {
