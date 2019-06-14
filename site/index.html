@@ -10,6 +10,42 @@
         min-width: 400px;
         min-height: 300px;
       }
+      @keyframes a {
+        0%,
+        to {
+          transform: rotate(0);
+        }
+
+        20%,
+        60% {
+          transform: rotate(-25deg);
+        }
+
+        40%,
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+      .github-corner {
+        border-bottom: 0;
+        position: fixed;
+        right: 0;
+        text-decoration: none;
+        top: 0;
+        z-index: 9999;
+      }
+      .github-corner:hover {
+        cursor: pointer;
+      }
+      .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+      }
+      .github-corner svg {
+        color: #fff;
+        fill: var(--theme-color, #e60000);
+        height: 80px;
+        width: 80px;
+      }
     </style>
   </head>
 
