@@ -16,8 +16,8 @@ npm i spritejs @qcharts/core cat-charts-react
 
 ```html
 <script src="https://unpkg.com/spritejs/dist/spritejs.min.js"></script>
-<script src=""></script>
-<script src=""></script>
+<script src="https://unpkg.com/@qcharts/core/lib/index.js"></script>
+<script src="https://unpkg.com/cat-charts-react/lib/index.js"></script>
 ```
 
 ## 绘制
