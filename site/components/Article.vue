@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <aside :class="showMenu ? 'is-show' : ''">
+    <aside :class="{'is-show':showMenu,'side-menu':true}">
       <nav>
         <ul>
           <template v-for="(item, i) in routes">
