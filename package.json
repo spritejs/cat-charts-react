@@ -1,8 +1,8 @@
 {
   "name": "cat-charts-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A powerful React chart library based on qcharts",
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "cross-env DEV_MODE=doc webpack-dev-server --config ./build/webpack.conf.dev.js",
     "build": "npm run build:docs && npm run build:chart && echo 'Build successfully!'",
