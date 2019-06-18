@@ -47,11 +47,12 @@ function App() {
   }
   const size = ['100%', '100%']
   const forceFit = true
+    const lineStyle = { point: { color: '#fff' } }
   const axisStyle = { axis: false, scale: false }
 
   return (
     <Chart data={data} dataFields={dataFields} size={size} forceFit={forceFit}>
-      <Line />
+      <Line style={lineStyle}/>
       <Legend align={['center', 'bottom']} />
       <Axis />
       <Axis orient={'left'} style={axisStyle} />
