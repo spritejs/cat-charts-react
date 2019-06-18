@@ -1,6 +1,6 @@
 {
   "name": "cat-charts-react",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A powerful React chart library based on qcharts",
   "main": "lib/index.js",
   "scripts": {

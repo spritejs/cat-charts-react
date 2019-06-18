@@ -47,6 +47,15 @@ export class Chart extends PureComponent {
     return dataFields
   }
 
+  componentWillReceiveProps(nextProps) {
+    const { data, dataFields = {} } = nextProps
+    this.chart.attr(nextProps)
+
+    if (data) {
+      this.chart.source(data, dataFields)
+    }
+  }
+
   componentDidMount() {
     const data = this.getData()
     const dataFields = this.getDataFields()
@@ -74,12 +83,6 @@ export class Chart extends PureComponent {
       chart.add(instance)
     })
     chart.render()
-  }
-
-  componentWillReceiveProps() {
-    const data = this.getData()
-    const dataFields = this.getDataFields()
-    this.chart.source(data, dataFields)
   }
 
   getContainer = ref => {
