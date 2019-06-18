@@ -76,10 +76,29 @@ function App() {
     guideText: { fontSize: '12px' }
   }
 
+  const legendStyle = {
+    icon: (attrs, d, i) => ({
+      marginTop: i > 0 ? 10 : 0
+    }),
+    text: (attrs, d, i) => ({
+      marginTop: i > 0 ? 10 : 0
+    })
+  }
+
   return (
     <Chart data={data} dataFields={dataFields} size={size} forceFit={forceFit}>
-      <Pie style={pieStyle} radius={0.8} innerRadius={0.4} />
-      <Legend orient={'vertical'} align={['right', 'center']} />
+      <Pie
+        style={pieStyle}
+        radius={0.7}
+        innerRadius={0.4}
+        pos={[0, 0]}
+        size={['80%', '100%']}
+      />
+      <Legend
+        orient={'vertical'}
+        align={['right', 'center']}
+        style={legendStyle}
+      />
     </Chart>
   )
 }
