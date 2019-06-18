@@ -35,18 +35,29 @@ function App() {
   const size = ['100%', '100%']
   const forceFit = true
 
+  const pieStyle = {
+    sector: { lineWidth: 1, color: '#fff' },
+    guideLine: true,
+    guideText: true
+  }
   const legendStyle = {
     icon: (attrs, d, i) => ({
-      marginTop: i > 0 ? 15 : 0
+      marginTop: i > 0 ? 10 : 0
     }),
     text: (attrs, d, i) => ({
-      marginTop: i > 0 ? 15 : 0
+      marginTop: i > 0 ? 10 : 0
     })
   }
 
   return (
     <Chart data={data} dataFields={dataFields} size={size} forceFit={forceFit}>
-      <Pie rose={true} radius={0.8} />
+      <Pie
+        rose={true}
+        radius={0.8}
+        pos={[0, 0]}
+        size={['80%', '100%']}
+        style={pieStyle}
+      />
       <Legend
         style={legendStyle}
         orient={'vertical'}
@@ -100,10 +111,10 @@ function App() {
 
   const legendStyle = {
     icon: (attrs, d, i) => ({
-      marginTop: i > 0 ? 15 : 0
+      marginTop: i > 0 ? 10 : 0
     }),
     text: (attrs, d, i) => ({
-      marginTop: i > 0 ? 15 : 0
+      marginTop: i > 0 ? 10 : 0
     })
   }
 
