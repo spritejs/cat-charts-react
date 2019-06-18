@@ -1,6 +1,6 @@
 {
   "name": "cat-charts-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A powerful React chart library based on qcharts",
   "main": "lib/main.js",
   "scripts": {
@@ -86,7 +86,7 @@
     "webpack-merge": "^4.1.5"
   },
   "dependencies": {
-    "@qcharts/core": "^0.1.2",
+    "@qcharts/core": "^0.1.5",
     "prop-types": "^15.7.2"
   }
 }

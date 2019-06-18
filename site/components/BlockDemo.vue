@@ -131,8 +131,8 @@ export default {
         <script crossorigin="anonymous" integrity="sha384-/6abeKukkMgqKqL8g8JINA6J38IKDXwd1XiKRHwF1y6IWpMAuCI+4KSBLOj3bv+k" src="//lib.baomitu.com/react-dom/16.9.0-alpha.0/umd/react-dom.production.min.js"><\/script>
         <script crossorigin="anonymous" integrity="sha384-LYxFDCinsAkMityIwlndisTOMBM5FXNysu758VzqiuCRZmCw7aDRDVn9HlHPi80A" src="//lib.baomitu.com/prop-types/15.7.2/prop-types.min.js"><\/script>
         <script src="https://unpkg.com/spritejs/dist/spritejs.min.js"><\/script>
-        <script src="https://s0.ssl.qhres.com/static/8d1e662c5749bb74.js"><\/script>
-        <script src="https://s3.ssl.qhres.com/static/96b7056e3cc106bb.js"><\/script>
+        <script src="https://unpkg.com/@qcharts/core/lib/index.js"><\/script>
+        <script src="https://unpkg.com/cat-charts-react/lib/index.js"><\/script>
         <script>
         function require(name) {
           switch (name) {
@@ -151,8 +151,8 @@ export default {
 
     fullscreen() {
       this.isFullscreen = !this.isFullscreen
-      if(window.parent){
-        window.parent.postMessage({fullScreen:this.isFullscreen},'*');
+      if (window.parent) {
+        window.parent.postMessage({ fullScreen: this.isFullscreen }, '*')
       }
     }
   }
@@ -196,7 +196,9 @@ export default {
   z-index: 1000;
   margin-top: 0 !important;
 }
-.block-demo--fixed .bock-demo__ctrl{padding-right:88px;}
+.block-demo--fixed .bock-demo__ctrl {
+  padding-right: 88px;
+}
 .block-demo + .block-demo {
   margin-top: 30px;
 }
