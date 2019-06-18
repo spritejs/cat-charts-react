@@ -2,8 +2,7 @@
   <header>
     <nav class="navbar">
       <router-link class="navbar-brand" to="/">
-        <img src="http://p0.qhimg.com/d/inn/9f54b5223cfd/cat-charts.png" height="30" alt="qchart">
-        React
+        <img src="https://p4.ssl.qhimg.com/t012b75d7dfb76ce86c.png" height="40" alt="qchart">
       </router-link>
 
       <button @click="toggleShowMenu" class="navbar-toggler">

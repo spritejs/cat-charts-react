@@ -11,6 +11,7 @@ module.exports = {
   entry: './src',
   output: {
     path: path.resolve(__dirname, '../lib'),
+    filename: 'index.js',
     library: 'CatchartsReact',
     libraryTarget: 'umd',
     libraryExport: 'default'
