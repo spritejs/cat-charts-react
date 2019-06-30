@@ -71,7 +71,7 @@ function App() {
   const forceFit = true
 
   const pieStyle = {
-    sector: { lineWidth: 1, color: '#fff' },
+    sector: { lineWidth: 1, strokeColor: '#fff' },
     guideLine: true,
     guideText: { fontSize: '12px' }
   }

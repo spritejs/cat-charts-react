@@ -46,7 +46,7 @@ function App() {
   const size = ['100%', '100%']
   const forceFit = true
   const lineStyle = {
-    point: { pointType: 'star', size: 8 },
+    point: { pointType: 'star', size: 8, strokeColor: '#fff' },
     'point:hover': function(attrs, data, i, j) {
       //设置symbol样式
       if (data.sales > 60) {
@@ -147,7 +147,7 @@ function App() {
   }
   const size = ['100%', '100%']
   const forceFit = true
-  const lineStyle = { point: { color: '#fff' } }
+  const lineStyle = { point: { strokeColor: '#fff' } }
   const axisStyle = { axis: false, scale: false }
 
   setTimeout(() => {
@@ -223,7 +223,7 @@ function App() {
   const size = ['100%', '100%']
   const forceFit = true
   const lineStyle = {
-    point: { color: '#fff' },
+    point: { strokeColor: '#fff' },
     'symbol:hover': { fillColor: '#f00' }
   }
   const axisStyle = { axis: false, scale: false }

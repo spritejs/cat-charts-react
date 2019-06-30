@@ -86,7 +86,7 @@
     "webpack-merge": "^4.1.5"
   },
   "dependencies": {
-    "@qcharts/core": "^0.1.5",
+    "@qcharts/core": "^0.1.11",
     "prop-types": "^15.7.2"
   }
 }

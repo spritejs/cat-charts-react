@@ -40,7 +40,8 @@ function App() {
 
   const style = {
     guideLine: true,
-    guideText: true
+    guideText: true,
+    polygon: { strokeColor: 'transparent' }
   }
 
   return (

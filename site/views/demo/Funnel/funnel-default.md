@@ -43,6 +43,7 @@ function App() {
   const style = {
     guideLine: true,
     guideText: true,
+    polygon: { strokeColor: 'transparent' },
     'polygon:hover': (polygon, dataOrigin, index) => {
       return { opacity: 0.5 }
     }

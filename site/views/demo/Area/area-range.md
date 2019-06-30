@@ -54,8 +54,8 @@ function App() {
         return { fillColor: 'rgba(0,0,0,0.05)' }
       }
     },
-    point: { fillColor: 'transparent' },
-    'point:hover': { color: '#fff' }
+    point: { fillColor: 'transparent', strokeColor: '#fff' },
+    'point:hover': { strokeColor: '#fff' }
   }
   const axisStyle = { axis: false, scale: false }
 

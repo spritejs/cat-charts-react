@@ -62,8 +62,8 @@ function App() {
   const size = ['100%', '100%']
   const forceFit = true
   const areaStyle = {
-    point: { fillColor: 'transparent' },
-    'point:hover': { color: '#fff' }
+    point: { fillColor: 'transparent', strokeColor: '#fff' },
+    'point:hover': { strokeColor: '#fff' }
   }
   const axisStyle = { axis: false, scale: false }
 
@@ -134,11 +134,12 @@ function App() {
   }
   const size = ['100%', '100%']
   const forceFit = true
+  const areaStyle = { point: { strokeColor: '#fff' } }
   const axisStyle = { axis: false, scale: false }
 
   return (
     <Chart data={data} dataFields={dataFields} size={size} forceFit={forceFit}>
-      <Area stack={false} />
+      <Area stack={false} style={areaStyle} />
       <Legend align={['center', 'bottom']} />
       <Axis />
       <Axis orient={'left'} style={axisStyle} />
