@@ -3,7 +3,7 @@
 :::demo
 
 ```javascript
-import React, { useState } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import {
   Chart,
@@ -19,10 +19,6 @@ import {
   Legend,
   Tooltip
 } from 'cat-charts-react'
-
-let pie1Colors = []
-let pie2Colors = []
-let allSet = false
 
 function App() {
   const data = [

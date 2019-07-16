@@ -1,4 +1,4 @@
-## RadialBar Chart 玉玦图
+## ArcPie Chart 弧饼图
 
 :::demo
 
@@ -10,12 +10,12 @@ import {
   Area,
   Line,
   Pie,
+  ArcPie,
   Bar,
   Radar,
   Scatter,
   Gauge,
   Funnel,
-  RadialBar,
   Axis,
   Legend,
   Tooltip
@@ -24,36 +24,25 @@ import {
 function App() {
   const data = [
     {
-      type: '政法干部',
-      count: 6654
+      type: '污染源',
+      count: 4454
     },
 
     {
-      type: '平安志愿者',
-      count: 5341
+      type: '消防场所',
+      count: 1239
     },
 
     {
-      type: '人民调解员',
-      count: 3546
+      type: '安全生产',
+      count: 3758
     },
 
     {
-      type: '心理咨询师',
-      count: 4321
-    },
-
-    {
-      type: '法律工作者',
-      count: 3923
-    },
-
-    {
-      type: '网格员',
-      count: 5345
+      type: '治安场所',
+      count: 4353
     }
-  ].sort((a, b) => b.count - a.count)
-
+  ]
   const dataFields = {
     row: 'type',
     value: 'count'
@@ -61,8 +50,8 @@ function App() {
   const size = ['100%', '100%']
   const forceFit = true
 
-  const radialBarStyle = {
-    arc: { lineCap: 'round', anticlockwise: true }
+  const style = {
+    arc: { lineCap: 'round' }
   }
 
   const legendStyle = {
@@ -76,14 +65,13 @@ function App() {
 
   return (
     <Chart data={data} dataFields={dataFields} size={size} forceFit={forceFit}>
-      <RadialBar
-        min={0}
-        max={10000}
-        radius={0.6}
-        style={radialBarStyle}
+      <ArcPie
+        style={style}
+        radius={0.7}
         pos={[0, 0]}
         size={['80%', '100%']}
-        lineWidth={10}
+        lineWidth={20}
+        padAngle={0.3}
       />
       <Legend
         orient={'vertical'}

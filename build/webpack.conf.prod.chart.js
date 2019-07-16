@@ -3,8 +3,8 @@ const path = require('path')
 const BundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 // 重新生成 index.js 文件
-const generateIndex = require('../autoGenerateIndex')
-fs.writeFileSync('./src/index.js', generateIndex())
+// const generateIndex = require('../autoGenerateIndex')
+// fs.writeFileSync('./src/index.js', generateIndex())
 
 module.exports = {
   mode: 'production',

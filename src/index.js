@@ -1,57 +1,31 @@
-
 import qcharts from '@qcharts/core'
 import { Chart } from './components/Chart'
 import { generateComponent } from './components/Base'
 
 const version = require('../package.json').version
 
-const components = [
-  "Pie",
-  "Line",
-  "Area",
-  "Bar",
-  "Radar",
-  "Scatter",
-  "Gauge",
-  "Funnel",
-  "Axis",
-  "Legend",
-  "Tooltip"
+const BlackList = [
+  'h',
+  'version',
+  'BaseVisual',
+  'BasePlugin',
+  'Chart',
+  'Dataset',
+  'Global'
 ]
 
-const [Pie,Line,Area,Bar,Radar,Scatter,Gauge,Funnel,Axis,Legend,Tooltip ] = components.map(generateComponent)
+const components = Object.keys(qcharts).filter(t => BlackList.indexOf(t) < 0)
 
-export {
+const Components = components.reduce((a, c) => {
+  a[c] = generateComponent(c)
+  return a
+}, Object.create(null))
+
+export const QchartsReact = {
   version,
   qcharts,
   Chart,
-  Pie,
-  Line,
-  Area,
-  Bar,
-  Radar,
-  Scatter,
-  Gauge,
-  Funnel,
-  Axis,
-  Legend,
-  Tooltip
+  ...Components
 }
 
-export default {
-  version,
-  qcharts,
-  Chart,
-  Pie,
-  Line,
-  Area,
-  Bar,
-  Radar,
-  Scatter,
-  Gauge,
-  Funnel,
-  Axis,
-  Legend,
-  Tooltip
-}
-
+export default QchartsReact

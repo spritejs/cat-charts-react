@@ -4,7 +4,7 @@ import PieRoutes from './Pie/routes'
 import ProgressRoutes from './Progress/routes'
 import BarRoutes from './Bar/routes'
 import ColumnRoutes from './Column/routes'
-// import RadialBarRoutes from './radialBar/routes'
+import RadialBarRoutes from './radialBar/routes'
 import LineRoutes from './line/routes'
 import AreaRoutes from './Area/routes'
 import FunnelRoutes from './Funnel/routes'
@@ -34,7 +34,6 @@ export default [
     children: AreaRoutes
   },
 
-
   {
     title: '柱状图',
     path: 'column',
@@ -53,12 +52,7 @@ export default [
     component: generateCommonPage('/demo/pie/', PieRoutes),
     children: PieRoutes
   },
-  // {
-  //   title: '极坐标柱状图',
-  //   path: 'radialBar',
-  //   component: generateCommonPage('/demo/radialBar/', RadialBarRoutes),
-  //   children: RadialBarRoutes
-  // },
+
   {
     title: '雷达图',
     path: 'radar',
@@ -91,6 +85,13 @@ export default [
     path: 'gauge',
     component: generateCommonPage('/demo/gauge/', gaugeRoutes),
     children: gaugeRoutes
+  },
+
+  {
+    title: '玉玦图',
+    path: 'radialBar',
+    component: generateCommonPage('/demo/radialBar/', RadialBarRoutes),
+    children: RadialBarRoutes
   }
 
   // {
