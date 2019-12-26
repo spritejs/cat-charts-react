@@ -130,7 +130,7 @@ export default {
         <script crossorigin="anonymous" integrity="sha384-1h1mm/F6lFiBxX76g+9DH51Oa/er1DefjdEykhUdbnfUEUVAEQFI5AB+BtFdUdKr" src="//lib.baomitu.com/react/16.9.0-alpha.0/umd/react.production.min.js"><\/script>
         <script crossorigin="anonymous" integrity="sha384-/6abeKukkMgqKqL8g8JINA6J38IKDXwd1XiKRHwF1y6IWpMAuCI+4KSBLOj3bv+k" src="//lib.baomitu.com/react-dom/16.9.0-alpha.0/umd/react-dom.production.min.js"><\/script>
         <script crossorigin="anonymous" integrity="sha384-LYxFDCinsAkMityIwlndisTOMBM5FXNysu758VzqiuCRZmCw7aDRDVn9HlHPi80A" src="//lib.baomitu.com/prop-types/15.7.2/prop-types.min.js"><\/script>
-        <script src="https://unpkg.com/spritejs/dist/spritejs.min.js"><\/script>
+        <script src="https://unpkg.com/spritejs@2/dist/spritejs.min.js"><\/script>
         <script src="https://unpkg.com/@qcharts/core@0.2/dist/index.js"><\/script>
         <script src="https://unpkg.com/cat-charts-react/lib/index.js"><\/script>
         <script>
